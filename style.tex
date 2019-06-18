@@ -1,0 +1,55 @@
+\mode<presentation> { \usetheme{Rochester} }
+\setbeamersize{text margin left=0.6cm,text margin right=0.6cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{
+  \leavevmode
+  \begin{beamercolorbox}[wd=\paperwidth,dp=2ex]{subsection in head/foot}
+    \usebeamerfont{subsection in head/foot}
+    \begin{columns}[T]
+      \begin{column}{.7\paperwidth}
+        \vskip4ex
+        \begin{flushright}
+          \usebeamercolor{title in headline}{
+            \color{fg}\textbf{\huge{\inserttitle}}\\[1ex]
+          }
+          \usebeamercolor{author in headline}{
+            \color{fg}\Large{\insertauthor}\\[1ex]
+          }
+          \usebeamercolor{institute in headline}{
+            \color{fg}\Large{\insertinstitute}\\[1ex]
+          }
+        \end{flushright}
+      \end{column}
+      \begin{column}{.25\paperwidth}
+        \vskip1.5cm
+        \begin{center}
+          \includegraphics[width=.85\linewidth]{figures/logo.png}
+        \end{center}
+      \end{column}
+      \begin{column}{.03\paperwidth}
+      \end{column}
+    \end{columns}
+    \vskip0cm
+  \end{beamercolorbox}
+%  \begin{beamercolorbox}[wd=\paperwidth]{section in head/foot}
+%    \rule{0pt}{2pt}
+%  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \begin{beamercolorbox}[leftskip=1cm,rightskip=1cm]{subsection in head/foot}
+    \usebeamerfont{section in head/foot}
+    \vskip1ex
+    \normalsize
+    \insertinstitute
+    \hfill
+    \texttt{\correspondingAuthorEmail}
+    \hfill
+    \texttt{http://cmp.univie.ac.at}
+  \end{beamercolorbox}
+  %\begin{beamercolorbox}[wd=\paperwidth]{section in head/foot}
+    %\rule{0pt}{2pt}
+  %\end{beamercolorbox}
+}
+
